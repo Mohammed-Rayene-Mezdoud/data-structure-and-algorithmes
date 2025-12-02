@@ -11,7 +11,7 @@ bool isEven(int n)
 
 
 
-int isPrime(int n )
+bool isPrime(int n )
 {
     // variables 
     int i;
@@ -22,10 +22,7 @@ int isPrime(int n )
     check=0;
 
     if (n == 0 || n == 1)
-        {
-        printf("The input number is not Prime \n");
-        return 0;
-        }
+        return false;
 
     for ( i=2 ; i < n/2 ; i++){
         temp=n%i;
@@ -37,9 +34,9 @@ int isPrime(int n )
         }
 
         if (check==0)
-            printf("The input number is prime \n");
-        else
-            printf("The input number is not prime \n");
+            return true;
+
+        return false;
             
 return 0;
 }
