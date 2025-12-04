@@ -9,8 +9,6 @@ bool isEven(int n)
     return false;
 }
 
-
-
 bool isPrime(int n )
 {
     // variables 
@@ -26,6 +24,7 @@ bool isPrime(int n )
 
     for ( i=2 ; i < n/2 ; i++){
         temp=n%i;
+
         if (temp==0)
             {
             check=1;
@@ -40,9 +39,6 @@ bool isPrime(int n )
             
 return 0;
 }
-
-
-
 
 int gcd(int a, int b)
 {
@@ -122,7 +118,6 @@ printf("The lcm of input numbers is %d \n",LCM);
 return 0;
 }
 
-
 int modExp(int num, int exp ,int mod)
 {
     int result=1;
@@ -148,7 +143,6 @@ result=(result*num)%mod;      //switch between the rest and the base to do the n
 printf("The result of modular exponentiation of the given numbers is %d", result);
 return result;
 }
-
 
 int factorial(int num){
     if (num<0)
@@ -287,6 +281,7 @@ int temp=num,sum=0;
         }
 return 0;
 }
+
 int isArmstrong(int num)
 {
 int sum=0;
@@ -329,4 +324,3 @@ return 0;
         }
 
 }
-

@@ -3,11 +3,11 @@
 
 
 int main(){
-
-
-
-    if (isEven(2))
-        printf("even");
+int a;
+int is;
+scanf("%d",&a);
+is= isPrime(a);
+printf("%d",is);
 
     return 0;
     
